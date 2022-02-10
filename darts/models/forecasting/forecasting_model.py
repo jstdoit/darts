@@ -1109,7 +1109,7 @@ class DualCovariatesForecastingModel(ForecastingModel, ABC):
             )
 
             future_covariates = future_covariates[
-                start : start + (n - 1) * self.training_series.freq
+                start : start + (n) * self.training_series.freq
             ]
 
             raise_if_not(
