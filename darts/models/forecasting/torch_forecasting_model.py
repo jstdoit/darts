@@ -1404,10 +1404,6 @@ def _basic_compare_sample(train_sample: Tuple, predict_sample: Tuple):
         cov_train is None and cov_pred is not None,
         "This model has been trained without covariates. No covariates should be provided for prediction.",
     )
-    print('train:')
-    print(cov_train)
-    print('pred:')
-    print(cov_pred)
     raise_if(
         cov_train is not None
         and cov_pred is not None
